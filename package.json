@@ -1,0 +1,28 @@
+{
+  "name": "shorts-scorer-challenge",
+  "version": "1.0.0",
+  "description": "Technical assessment for identifying and scoring podcast clips for short-form content",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --verbose",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "assessment",
+    "shorts",
+    "scoring",
+    "podcast"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "nodemon": "^3.0.1"
+  }
+}

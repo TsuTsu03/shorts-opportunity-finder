@@ -1,0 +1,78 @@
+{
+  "clips": [
+    {
+      "clip_id": "clip_001",
+      "episode_id": "ep001",
+      "start_time": 82.0,
+      "end_time": 215.0,
+      "duration": 133.0,
+      "speaker": "Bri Bellavati",
+      "score": 75,
+      "rank": 1,
+      "text": "It's not traditional or conventional in any sense of the definition. My roots started off in education...",
+      "engagement_factors": {
+        "has_question": false,
+        "has_controversy": false,
+        "has_numbers": true,
+        "optimal_length": false,
+        "completeness": true,
+        "action_words": ["traditional", "started", "working"]
+      },
+      "reasoning": "Strong narrative arc + specific examples + complete thought"
+    },
+    {
+      "clip_id": "clip_002",
+      "episode_id": "ep002",
+      "start_time": 73.0,
+      "end_time": 153.0,
+      "duration": 80.0,
+      "speaker": "Douglas McDowell",
+      "score": 82,
+      "rank": 2,
+      "text": "Yeah, well, I like the fact that you kind of threw in the 15,000 feet because kind of a level or two above that is this growing issue...",
+      "engagement_factors": {
+        "has_question": false,
+        "has_controversy": true,
+        "has_numbers": true,
+        "optimal_length": true,
+        "completeness": true,
+        "action_words": ["exploding", "mistake", "holy cow"]
+      },
+      "reasoning": "Optimal length + controversy + numbers + complete thought"
+    },
+    {
+      "clip_id": "clip_003",
+      "episode_id": "ep003",
+      "start_time": 300.0,
+      "end_time": 345.0,
+      "duration": 45.0,
+      "speaker": "Nick Capello",
+      "score": 87,
+      "rank": 3,
+      "text": "Yeah, I mean, so basically, a lot of people do that highfalutin language because they want people to think that they're brilliant...",
+      "engagement_factors": {
+        "has_question": false,
+        "has_controversy": true,
+        "has_numbers": false,
+        "optimal_length": true,
+        "completeness": true,
+        "action_words": ["brilliant", "highfalutin"]
+      },
+      "reasoning": "Optimal length + controversial take + actionable insight"
+    }
+  ],
+  "metadata": {
+    "total_clips_analyzed": 718,
+    "clips_returned": 3,
+    "episodes_processed": 3,
+    "min_score": 70,
+    "max_score": 87,
+    "avg_score": 81.3
+  },
+  "query": {
+    "episode_id": "all",
+    "min_duration": 30,
+    "max_duration": 90,
+    "limit": 10
+  }
+}
