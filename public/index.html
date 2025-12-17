@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shorts Opportunity Finder</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 24px; }
+    .clip { border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; }
+    .score { font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>🎬 Shorts Opportunity Finder</h1>
+  <button onclick="loadClips()">Load Top Clips</button>
+  <div id="clips"></div>
+
+  <script>
+    async function loadClips() {
+      const res = await fetch('/api/clips?min_score=70&limit=10');
+      const data = await res.json();
+
+      const container = document.getElementById('clips');
+      container.innerHTML = '';
+
+      data.clips.forEach(c => {
+        const div = document.createElement('div');
+        div.className = 'clip';
+        div.innerHTML = `
+          <div class="score">Score: ${c.score} (Rank ${c.rank})</div>
+          <div><strong>${c.speaker}</strong></div>
+          <p>${c.text}</p>
+          <small>${c.reasoning}</small>
+        `;
+        container.appendChild(div);
+      });
+    }
+  </script>
+</body>
+</html>
